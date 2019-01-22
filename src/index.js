@@ -1,3 +1,8 @@
-import pageLoad from './page-load.js';
+import displayHome from './home.js';
+import displayMenu from './menu';
+import displayContact from './contact';
 
-pageLoad.render();
+// displayHome.render();
+
+
+

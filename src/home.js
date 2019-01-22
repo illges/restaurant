@@ -1,5 +1,5 @@
 //Module Pattern
-const pageLoad = (() => {
+const displayHome = (() => {
     const render = () => {
         const content = document.getElementById('content')
         function createHeadLine() {
@@ -27,4 +27,4 @@ const pageLoad = (() => {
 })();
 
 
-export default pageLoad
+export default displayHome

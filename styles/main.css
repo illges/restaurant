@@ -35,15 +35,29 @@ header {
 	text-align: center;
 }
 
-.tabs>div {
+.tabs > div {
 	display: grid;
-	border: 1px solid black;
+  border: 1px solid black;
+  background: lightblue;
 	align-items: center;
+}
+
+.tabs > div.home-tab {
+  border-left: none;
+}
+
+.tabs > div.contacts-tab {
+  border-right: none;
+}
+
+.tabs > div.selected-tab {
+  background: white;
+  border-bottom: none;
 }
 
 /*Information*/
 section {
-	display: grid;
+  display: grid;
 }
 
 section > * {

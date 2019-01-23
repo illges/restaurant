@@ -30,7 +30,7 @@ const displayFrame = (() => {
 
     function createFooter() {
       const footer = document.createElement("footer");
-      footer.innerHTML = "pickles";
+      footer.innerHTML = "packlers";
       return footer
     }
 

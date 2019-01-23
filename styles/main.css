@@ -58,6 +58,7 @@ header {
 /*Information*/
 section {
   display: grid;
+  text-align: center;
 }
 
 section > * {
@@ -68,6 +69,8 @@ section > * {
 /*Footer*/
 footer {
 	display: grid;
-	border: 1px solid black;
+  border: 1px solid black;
+  text-align: center;
+  background: #2b7bd6;
 }
 

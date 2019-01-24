@@ -5,19 +5,6 @@ import displayContacts from "./contact";
 
 displayFrame.render();
 displayHome.render();
-// displayMenu.render();
-// displayContacts.render();
-
-const listener = (() => {
-  const home = document.querySelector(".home-tab");
-  home.addEventListener("click", displayHome.render);
-
-  const menu = document.querySelector(".menu-tab");
-  menu.addEventListener("click", displayMenu.render);
-
-  const contacts = document.querySelector(".contacts-tab");
-  contacts.addEventListener("click", displayContacts.render);
-})();
 
 const clear = (() => {
   const section = () => {
@@ -26,14 +13,27 @@ const clear = (() => {
       section.removeChild(section.firstChild);
     }
   }
-
-  const tabs = () => {
-
-  }
+  
   return {
     section
   };
 })();
+
+const listener = (() => {
+  const home = document.querySelector(".home-tab");
+  home.addEventListener("click", clear.section);
+  home.addEventListener("click", displayHome.render);
+
+  const menu = document.querySelector(".menu-tab");
+  menu.addEventListener("click", clear.section);
+  menu.addEventListener("click", displayMenu.render);
+
+  const contacts = document.querySelector(".contacts-tab");
+  contacts.addEventListener("click", clear.section);
+  contacts.addEventListener("click", displayContacts.render);
+})();
+
+
 
 export default clear
 

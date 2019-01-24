@@ -3,7 +3,6 @@ import clear from "./index";
 
 const displayContacts = (() => {
   const render = () => {
-    clear.section();
     const section = document.querySelector("section");
 
     const contacts_tab = document.querySelector(".contacts-tab");

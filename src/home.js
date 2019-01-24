@@ -3,9 +3,6 @@ import clear from "./index";
 const displayHome = (() => {
   const render = () => {
     const section = document.querySelector("section");
-    if (section.firstChild) {
-      clear.section();
-    }
 
     const home_tab = document.querySelector(".home-tab");
     home_tab.classList.add("selected-tab");

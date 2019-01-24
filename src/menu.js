@@ -2,7 +2,6 @@ import clear from "./index";
 
 const displayMenu = (() => {
   const render = () => {
-    clear.section();
 
     const section = document.querySelector("section");
 

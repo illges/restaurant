@@ -1,11 +1,10 @@
-
+import clear from "./index";
 
 const displayMenu = (() => {
   const render = () => {
+    clear.section();
+
     const section = document.querySelector("section");
-    while (section.firstChild) {
-      section.removeChild(section.firstChild);
-    }
 
     const home_tab = document.querySelector(".home-tab");
     home_tab.classList.remove("selected-tab");

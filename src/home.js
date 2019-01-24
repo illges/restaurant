@@ -1,11 +1,10 @@
+import clear from "./index";
 
-
-//Module Pattern
 const displayHome = (() => {
   const render = () => {
     const section = document.querySelector("section");
-    while (section.firstChild) {
-      section.removeChild(section.firstChild);
+    if (section.firstChild) {
+      clear.section();
     }
 
     const home_tab = document.querySelector(".home-tab");

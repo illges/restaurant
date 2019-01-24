@@ -1,11 +1,10 @@
+import clear from "./index";
 
 
 const displayContacts = (() => {
   const render = () => {
+    clear.section();
     const section = document.querySelector("section");
-    while (section.firstChild) {
-      section.removeChild(section.firstChild);
-    }
 
     const contacts_tab = document.querySelector(".contacts-tab");
     contacts_tab.classList.add("selected-tab");

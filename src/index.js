@@ -20,9 +20,9 @@ const listener = (() => {
 })();
 
 const clear = (() => {
-  const clear = () => {
+  const section = () => {
     var section = document.querySelector("section");
-    while (section.firstChild()) {
+    while (section.firstChild) {
       section.removeChild(section.firstChild);
     }
   }
@@ -31,7 +31,7 @@ const clear = (() => {
 
   }
   return {
-    clear
+    section
   };
 })();
 
